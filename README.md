@@ -27,15 +27,15 @@
 
 ## Technology used
 
-- ??Login Page? Auth?
+- Node/Express `http://localhost:8080/users/{user/organisation}` endpoint set up
+- Fetch, async/await
+- Parcel.js for bundling
+
 - ??BEM CSS / Sass, flexbox, CSS grid?, animation, classnames?
-- ?? Node/Express
-- ??Fetch
 - ??ES6, JS, React, hooks?
 - ??ES6 e.g. map, filter, arrow functions, template strings
 - ??npm packages?
 - ??Type checking with prop-types
-- ??Parcel.js for bundling
 
 ## Comments (to be completed)
 
