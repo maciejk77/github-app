@@ -1,0 +1,23 @@
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+
+  &__input {
+    border: 0.1rem solid red;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 12rem;
+  }
+
+  &__button {
+    background-color: red;
+    border: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+  }
+}

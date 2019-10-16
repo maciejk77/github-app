@@ -1,9 +1,10 @@
 import React from 'react';
+import SearchBar from '../SearchBar';
 
 const App = () => {
   return (
     <div>
-      <div>Hello from Parcel Starter!</div>
+      <SearchBar />
     </div>
   );
 };
