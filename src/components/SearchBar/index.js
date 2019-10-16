@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './styles.scss';
+import Repositories from '../Repositories';
 
 const baseUrl = 'http://localhost:8080/users';
 
@@ -39,7 +40,7 @@ const SearchBar = () => {
         />
         <button className="search-bar__button">FIND</button>
       </form>
-      <div>{JSON.stringify(userData)}</div>
+      {userData ? <Repositories data={userData} /> : null}
     </div>
   );
 };
