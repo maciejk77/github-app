@@ -9,14 +9,15 @@ const SearchBar = () => {
   const [finalKeyword, setFinalKeyword] = useState('');
   const [userData, setUserData] = useState();
 
+  const fetchUserData = user => {
+    if (user) {
+      fetch(`${baseUrl}/${user}`)
+        .then(res => res.json())
+        .then(data => data && setUserData(data));
+    }
+  };
+
   useEffect(() => {
-    const fetchUserData = user => {
-      if (user) {
-        fetch(`${baseUrl}/${user}`)
-          .then(res => res.json())
-          .then(data => data && setUserData(data));
-      }
-    };
     fetchUserData(keyword);
     return () => setKeyword('');
   }, [finalKeyword]);
