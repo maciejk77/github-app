@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './styles.scss';
 import Repositories from '../Repositories';
+import './styles.scss';
 
 const baseUrl = 'http://localhost:8080/users';
 
